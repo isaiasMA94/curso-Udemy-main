@@ -1,0 +1,9 @@
+h1{
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(249, 0, 50);
+        }
+        p{
+            color: rgb(1, 147, 1);
+            border: 1px;
+            border-style: solid;
+        }
