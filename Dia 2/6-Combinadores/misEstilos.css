@@ -1,0 +1,18 @@
+div p{
+    color: green;
+}
+/*cambia de color verge la fuente de los parrafos que estan dentro de un div*/
+ol > li{
+    font-weight: bolder;
+}
+/*oscurece la fuente de las listas mayores*/
+h2 ~ h3{
+    background-color: aqua;
+}
+/*cambia el color de fondo de los elementos h3 que van a continuacio  de un h2*/
+div p[align="left"]:hover{
+    background-color: gold;
+}
+/*cambia el fondo al pasar el curso por encima del texto con un selector
+ de estado(HOVER) del parrafo que este dentro de un div que contenga el
+  atrubuto align="left"*/

@@ -1,0 +1,30 @@
+body{
+    background-color: bisque;
+}
+/*se agrega color al fondo del boby*/
+
+.principal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*se elige un tipo de letra al los parrafos de clase principal*/
+
+#información{
+    text-align: center;
+}
+/* se alinea el texto en el centro*/
+
+a[href*=".edu"]{
+    background-color: gold;
+}
+/*se agrega color de fondo a enlaces con la ref .edu*/
+
+h1:hover{
+    color: red;
+}
+/*se agrega un hover(ESTADO) que cuando se psoiciones sobre la seudo clase se ponda el texto rojos*/
+
+.principal::first-line{
+    background-color: lightgrey;
+}
+/*Se agrega fondo a la primera linea siendo ese una seudo elemento */
+
