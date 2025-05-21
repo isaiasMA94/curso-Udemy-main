@@ -1,0 +1,56 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image:url(Imagenes/fondo2.jpg);
+    background-size: 100%;
+    color:rgb(120, 184, 244);
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+p{
+    background-color: cadetblue;
+    color: black;
+    padding: 5px;    
+}
+ol > li{
+    font-weight: bolder;
+}
+p{
+    text-align: justify;
+}
+a:hover[href*="index.html"]{
+    background-color: gold;
+}.foto{
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(255, 132, 0);
+    padding: 5px;
+}
+.principal::first-line{
+    background-color: chartreuse;
+}
+.centrar-texto{
+    text-align: center;
+}
+.menu a[href]{
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color:red; 
+    text-decoration-line: underline;
+}
+.carreras{
+    font-weight: 400;
+    color: gold;
+}
+#subtitulo{
+    text-decoration: underline;
+}
+#subtitulo::first-letter{
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+}
+
