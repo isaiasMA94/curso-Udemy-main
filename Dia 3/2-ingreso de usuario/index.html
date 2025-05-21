@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+        <title>Ingreso de usuarios</title>
+    </head>
+    <body>
+        <p>Ingresa tu nombre</p>
+        <input type="text" id="nombreUsuario">
+        <button onclick="saludarUsuario()">Saludar</button>
+        <script>
+            /*function saludarUsuario(){ //ejemplo de como llamar a una funcion con documen,getElementById.value
+                alert("hola " + document.getElementById("nombreUsuario").value)
+            }*/
+            function saludarUsuario(){
+                let miNombre = document.getElementById("nombreUsuario");
+                alert("hola " + miNombre.value)//se puede reutilizar la variable miNombre
+            }
+        </script>
+    </body> 
+</html>
