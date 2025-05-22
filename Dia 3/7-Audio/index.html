@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <head>
+        <title>Temporizador</title>
+    </head>
+    <body>
+        <input type="number" id="tiempoElejido"><!--type de tipo number para dar el timpo a la alerta-->
+        <button onclick="comenzarTiempo()">Alarma</button>
+        <h1 id="textoAlarma" style="color: red;">Apagado</h1>
+
+        <audio id="audioAlarma">
+            <!--<audio controls> se utiliza para hacer visible el obejto audio--> 
+            <source src="./sonidos/alarma.mpeg" type="audio/mpeg">
+            sonido no habilitado
+        </audio>
+
+
+        <script>
+            let elementoSegundos = document.getElementById("tiempoElejido");/*variable elementoSegundos donde se obtiene el timepo elejido para dar los segundos*/
+            let elementoTextoAlarma = document.getElementById("textoAlarma");/**/
+            let elemtoSonidoAlarma = document.getElementById("audioAlarma");
+
+
+            function comenzarTiempo(){
+                setTimeout(tiempoCumplido, 1000 * elementoSegundos.value);/**funcion para comenzar a correr el tiempo atraves de un setTimeout, 
+                                                                            donde llama a la funcion tiempo cumpldo, y se le indica los segundo por elementosSegundos
+                                                                           que elije el ususario la cual activara la alerta ennviando el mensaje**/
+            }
+
+            function tiempoCumplido(){
+                elementoTextoAlarma.textContent = "ENCENDIDO";/*se cambia el texto de apagado a encendido*/
+                elementoTextoAlarma.style.color = "green";/*se cambia el clor rojo a verde*/
+                elemtoSonidoAlarma.play();
+
+            }
+        </script>
+    </body> 
+</html>
