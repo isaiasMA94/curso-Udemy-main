@@ -2,28 +2,104 @@
     <head>
         <title>Calculadora</title>
         <link rel="stylesheet" href="misEstilos.css">
-        <script src="misScripts.js"></script>
+        <!--<script src="misScripts.js"></script>-->
     </head>
     <body>
         <div class="calculadora">
-            <input type="text" id="numero1">
-            <input type="text" id="numero2">
+            <div class="container">
+                <input type="text" id="numero1">
+                <input type="text" id="numero2">
+                
+            </div>
+        </div>
+        <div class="botones" id="botones" >
+            <button onclick="sumar()">SUMAR</button>
+            <button onclick="restar()">RESTA</button>
+            <button onclick="multiplicar()">MULTIPLICACION</button>
+            <button onclick="Dividir()">DIVISION</button>
+            <button onclick="raizCuadrada()">RAIZ CUADRADA</button>
+            <button onclick="potenciar()">POTENCIA</button>
+            <button onclick="valorAbsoluto()">ABSOLUTO</button>
+            <button onclick="random()">RANDOM</button>
+            <button onclick="round()">ROUND</button>
+            <button onclick="floor()">FLOOR</button>
+            <button onclick="ceil()">CEIL</button>
+        </div>
+        <div>
             <input type="text" id="resultado">
         </div>
-        <div class="botones">
-            <button onclick="suma()">+</button>
-            <button onclick="resta()">-</button>
-            <button onclick="multiplicacion()">*</button>
-            <button onclick="Division()">/</button>
-            <button onclick="raizCuadrada()"></button>
-            <button onclick="potencia()"></button>
-            <button onclick="valorAbsoluto()"></button>
-            <button onclick="random()"></button>
-            <button onclick="round()"></button>
-            <button onclick="floor()"></button>
-            <button onclick="ceil()"></button>
-        </div>
+        <script>
+            function sumar() {
+            let elemento1 = document.getElementById("numero1").value;
+            let elemento2 = document.getElementById("numero2").value;
 
-        
+            let resultado = Number(elemento1) + Number(elemento2);
+            document.getElementById("resultado").value = resultado;
+            }
+            function restar() {
+            let elemento1 = document.getElementById("numero1").value;
+            let elemento2 = document.getElementById("numero2").value;
+
+            let resultado = Number(elemento1) - Number(elemento2);
+            document.getElementById("resultado").value = resultado;
+            }
+            function multiplicar() {
+            let elemento1 = document.getElementById("numero1").value;
+            let elemento2 = document.getElementById("numero2").value;
+
+            let resultado = Number(elemento1) * Number(elemento2);
+            document.getElementById("resultado").value = resultado;
+            }
+            function dividir() {
+            let elemento1 = document.getElementById("numero1").value;
+            let elemento2 = document.getElementById("numero2").value;
+
+            let resultado = Number(elemento1) + Number(elemento2);
+            document.getElementById("resultado").value = resultado;
+            }
+            function raizCuadrada() {
+            let elemento1 = document.getElementById("numero1").value;
+            let elemento2 = document.getElementById("numero2").value;
+
+            let resultado = Number(elemento1) + Number(elemento2);
+            document.getElementById("resultado").value = resultado;
+            }
+            function potenciar() {
+            let elemento1 = document.getElementById("numero1").value;
+            let elemento2 = document.getElementById("numero2").value;
+
+            let resultado = Number(elemento1) + Number(elemento2);
+            document.getElementById("resultado").value = resultado;
+            }
+            function valorAbsoluto() {
+            let elemento1 = document.getElementById("numero1").value;
+            let elemento2 = document.getElementById("numero2").value;
+
+            let resultado = Number(elemento1) + Number(elemento2);
+            document.getElementById("resultado").value = resultado;
+            }
+            function random() {
+            let elemento1 = document.getElementById("numero1").value;
+            let elemento2 = document.getElementById("numero2").value;
+
+            let resultado = Number(elemento1) + Number(elemento2);
+            document.getElementById("resultado").value = resultado;
+            }
+            function round() {
+            let elemento1 = document.getElementById("numero1").value;
+            let elemento2 = document.getElementById("numero2").value;
+
+            let resultado = Number(elemento1) + Number(elemento2);
+            document.getElementById("resultado").value = resultado;
+            }
+            function floor() {
+            let elemento1 = document.getElementById("numero1").value;
+            let elemento2 = document.getElementById("numero2").value;
+
+            let resultado = Number(elemento1) + Number(elemento2);
+            document.getElementById("resultado").value = resultado;
+            }
+
+        </script>
     </body>
 </html>
