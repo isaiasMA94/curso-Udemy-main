@@ -1,17 +1,16 @@
-function Calcular() {
-    let elementoRespuesta1 = document.getElementById("Respuesta1");
-    let elementoRespuesta2 = document.getElementById("Respuesta2");
-    let elementoRespuesta3 = document.getElementById("Respuesta3");
+function evaluarCompra() {
+    let elementoRespuesta = document.getElementById("Descicion");
     
-    let elementoEdad = document.getElementById("textoEdad");
-    let edad = elementoEdad.value;
+    let elementoPrecio = document.getElementById("textoPrecio");
+    let Precio = elementoPrecio.value;
 
-    let puedeBeber = edad >= 18;
-    elementoRespuesta1.textContent = puedeBeber;
-
-    let puedeIngresar = edad >= 18 && edad <= 30;
-    elementoRespuesta2.textContent = puedeIngresar;
-
-    let entradaGratis = edad == 20 || edad == 25;
-    elementoRespuesta3.textContent = entradaGratis;
+    if (Precio < 5 ) {
+        elementoRespuesta.textContent = "Comprar dos cartones de leche";
+    } else {
+        if(Precio <8) {
+            elementoRespuesta.textContent = "comprar un cartón de leche";
+    } else {
+            elementoRespuesta.textContent = "No comprar leche, es muy cara";
+    }
+        }
 }

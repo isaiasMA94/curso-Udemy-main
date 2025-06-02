@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <head>
+        <title>Selector de peliculas</title>
+        <link rel="stylesheet" href="misEstilos.css">
+        <script src="misScripts.js"></script>
+    </head>
+    <body>
+       <h1>Elije tu pelicula</h1>
+       <h3>Opciones</h3>
+       <p>Te recomedaremos las mejores peliculas, dependiendo de le rango de edad que tengas</p>
+       <p>¿cual es tu edad?<input id="selectorEdad" type="text"></p>
+       <br><br>
+       <button onclick="recomendar('Comedia')">Comedia</button>
+       <button onclick="recomendar('Drama')">Drama</button>
+       <button onclick="recomendar('Musical')">Musical</button>
+       <button onclick="recomendar('crimen')">Crimen</button>
+       <h2>Nuestar Recomendacion</h2>
+       <h3 id="Respuesta"></h3>
+    </body>
+</html>

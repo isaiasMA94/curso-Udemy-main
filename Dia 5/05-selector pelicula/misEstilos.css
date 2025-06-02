@@ -1,0 +1,33 @@
+body {
+    background-color:royalblue ;
+}
+
+input {
+    height: 20px;
+    width: 80px;
+    font-size: 1rem;
+}
+h1{
+    background-color: mediumblue;
+    text-align: center;
+}
+
+h3 {
+    background-color: brown;
+    border-start-end-radius: 10px;
+    text-align: left;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+button {
+    margin-left: 150px;
+    padding: 25px;
+    height: 35px;
+    width: 140px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
