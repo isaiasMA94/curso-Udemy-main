@@ -9,39 +9,43 @@ function recomendar(genero) {
             } else {
                 if(edad <= 16) {
                 elementoRespuesta.textContent = "scary movie";
-            } else {
+                } else {
                 elementoRespuesta.textContent = "irene yo y mi otro yo";
-            }
-        }break;
+                }
+            }   
+            break;
         case "Drama":
             if(edad <= 13){
                 elementoRespuesta.textContent = "la vaca";
             } else {
                 if(edad <= 16) {
                 elementoRespuesta.textContent = "matrix";
-            } else {
+                } else {
                 elementoRespuesta.textContent = "underworld";
-            }
-        }break;
+                }
+            }   
+            break;
         case "Musical":
             if(edad <= 13){
                 elementoRespuesta.textContent = "bolgoood";
             } else {
                 if(edad <= 16) {
                 elementoRespuesta.textContent = "la fabrica";
-            } else {
+                } else {
                 elementoRespuesta.textContent = "mosncherry";
+                }
             }
-        }break;
+            break;
         case "Crimen":
             if(edad <= 13){
                 elementoRespuesta.textContent = "No se recomiernda a esta esta edad";
             } else {
                 if(edad <= 16) {
                 elementoRespuesta.textContent = "the boys";
-            } else {
+                } else {
                 elementoRespuesta.textContent = "El padrino";
+                }
             }
-        }break;
-    }
+            break;
+    } 
 }
