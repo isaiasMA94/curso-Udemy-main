@@ -1,23 +1,32 @@
 <html>
     <head>
         <title>Boletin estudiante</title>
-        <link rel="stylesheet" href="index.css">
-        <script src="index.js"></script>
+        <link rel="stylesheet" href="boletin.css">
+        <script src="boletin.js"></script>
     </head>
     <body>
-        <h1>BOLETIN ESTUDIANTE</h1>
-        <h2>Detalles del estudiante</h2>
-        <ul>
-            <li>2.5</li>
-            <li>3.5</li>
-            <li>5.8</li>
-            <li>7.0</li>
-            <li>5.6</li>
+        <div class="logo">
+            <img src="" alt=""/>
+            <h2>BIENVENIDO A TU BOLETIN DE ESTUDIANTE</h2>
+        </div>
+
+        <div class="estudiante">
+            <h3>Alumno: Ignacio Muñoz</h3>
+        </div>
+
+        <h4>Notas:</h4>
+        <ul id="listaNotas">
         </ul>
-        <div>
-            <button onclick="mostrarPromedio">Promedio</button>
-            <button onclick="mostrarNotaAlta">Nota mas alta</button>
-            <button onclick="mostrarNotaReprobada">Mala nota</button>
+
+        <div class="info">
+            <h4>Promedio <span id="promedio"></span></h4>
+            <button onclick="calcularPromedio()">Calcular promedio<button>
+            
+            <h4>Notas mas alta <span id="nota"></span></h4>
+            <button onclick="NotaMasAlta()">Buscar nota mas alta</button>
+
+            <h4>hubo algun aplazo <span id="aplazo"></span></h4>
+            <button onclick="hayAplazo()">Consultar aplazo</button>
         </div>
     </body>
 </html>
