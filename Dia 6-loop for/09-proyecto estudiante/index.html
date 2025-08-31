@@ -4,29 +4,27 @@
         <link rel="stylesheet" href="boletin.css">
         <script src="boletin.js"></script>
     </head>
-    <body>
+    <body onload="listarNotas()">
         <div class="logo">
-            <img src="" alt=""/>
-            <h2>BIENVENIDO A TU BOLETIN DE ESTUDIANTE</h2>
+            <img src="/Dia 6-loop for/logo.jpg" alt="logo"/>
+            <h2>BIENVENIDO A TU BOLETIN DE ESTUDIANTE</h2> <!--este es el titulo-->
         </div>
-
         <div class="estudiante">
-            <h3>Alumno: Ignacio Muñoz</h3>
+            <h3>Alumno: Ignacio Muñoz</h3><!--este es el subtitulo-->
         </div>
-
         <h4>Notas:</h4>
         <ul id="listaNotas">
         </ul>
 
         <div class="info">
-            <h4>Promedio <span id="promedio"></span></h4>
-            <button onclick="calcularPromedio()">Calcular promedio<button>
+            <h4>Promedio: <span id="promedio"></span></h4>
+            <button onclick="calcularPromedio()"> Calcular promedio </button>
             
-            <h4>Notas mas alta <span id="nota"></span></h4>
-            <button onclick="NotaMasAlta()">Buscar nota mas alta</button>
+            <h4>Nota mas alta: <span id="nota"></span></h4>
+            <button onclick="notaMasAlta()"> Buscar nota mas alta </button>
 
-            <h4>hubo algun aplazo <span id="aplazo"></span></h4>
-            <button onclick="hayAplazo()">Consultar aplazo</button>
+            <h4>¿hubo algun aplazo?: <span id="aplazo"></span></h4>
+            <button onclick="hayAplazo()"> Consultar aplazo </button>
         </div>
     </body>
 </html>
